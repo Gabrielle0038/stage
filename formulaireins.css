@@ -1,0 +1,94 @@
+form{
+    justify-content: center;
+    align-content: center;
+   border-radius: 5px;
+   border: 2px solid chocolate;
+    background-color: white;
+    height: 50%;
+    box-shadow: 0 50px 20px rgb(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 90%;
+    max-width: 30vw;
+    margin: auto;
+}
+input{
+     width: 93%;
+    height: 6vh;
+    box-sizing: border-box;
+    background-color: white;
+    margin:15px ; 
+    border-radius: 10px;
+    border: 2px solid chocolate;
+    padding-left: 5px;
+    outline: none;
+}
+
+.inscription{
+   justify-content: center;
+   align-content: center;
+   display: flex;
+     font-size: 28px;
+     font-weight: bold;
+     grid-row: 1fr;
+    grid-column: 2/3;
+}
+
+.inscrire,.ins:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgb(0, 0, 0, 0.3);
+} 
+
+.inscrire {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 5vh;
+    width: 10vw;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    outline: none;
+     border-radius: 5px;
+       border: 2px solid chocolate;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 8px;
+    grid-column: 1/2;
+    grid-row: 1fr;
+}
+.btn{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: max-content;
+    grid-template-areas: "inscrire ins";
+  
+}
+
+#ins{
+    grid-column: 3/4;
+    grid-row:1fr ;
+      display: flex;
+    height: 5vh;
+    width: 10vw;
+    cursor: pointer;
+    outline: none;
+     font-size: medium;
+    font-weight: bold;
+    border-radius: 8px;
+}
+.button{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: max-content;
+    grid-template-areas: "inscription annuler";
+}
+.annuler{
+    border: none;
+    outline: none;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+    grid-column: 3/4;
+    grid-row: 1fr;
+}
+

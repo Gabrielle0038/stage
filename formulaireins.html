@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulaireins.css">
+    <title>inscription</title>
+</head>
+<body>
+    <form id="form">
+       <div class="button">
+        <span class="inscription">Inscription</span>
+        <button class="annuler">x</button>
+        </div> 
+       <input type="text" placeholder="Name">
+        <input type="text" placeholder="Username">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="ConfirmPassword">
+        <div class="btn">
+         <input type="button" value="S'inscrire" class="inscrire">
+          <input type="button" value="Se connecter" id="ins">
+          </div>
+    </form>
+
+
+<script>
+
+    const form = document.getElementById("form");
+    const btn = document.querySelector(".annuler");
+
+    btn.addEventListener("click", function(e){
+        e.preventDefault();
+        form.style.display="none";
+    });
+
+    const ins = document.getElementById("ins");
+    ins.addEventListener("click", function(){
+        window.location.href="formsrim.html";
+    });
+m 
+</script>
+</body>
+</html>

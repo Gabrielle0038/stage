@@ -1,0 +1,298 @@
+.contener{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "containt nav";
+    height: auto;
+    width: auto;
+    column-gap: 1px;
+
+}
+body{
+
+    margin: auto;
+}
+.containt{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: -1;
+    border-radius: 5px;
+    border: 2px rgb(187, 106, 0) solid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr;
+    grid-template-areas: "video"
+                          "icone"
+                          "commentaire";
+                          background-attachment: fixed;
+                           background-color:  rgb(20, 20, 20);
+}
+#video{
+    grid-column: -1;
+    grid-row: 1/2;
+    width: 70vw;
+    height: 50vh;
+     
+     border-radius: 8px;
+}
+.icone{
+    grid-column: -1;
+    grid-row: 2/3;
+     
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 30px 40px 1fr;
+     grid-template-areas: "titre"
+                           "min_icone"
+                           "desc";
+    width: 70vw;
+    height: 20vh;
+    
+    
+}
+.titre{
+    grid-column: -1;
+    grid-row: 1/2;
+   
+    font-weight: bold;
+    font-size: large;
+    color: rgb(187, 106, 0) ;
+    background-color:  rgb(48, 48, 48);
+}
+.min_icone{
+    grid-column: -1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: -1;
+    grid-template-areas: "logo aimer partager telecharger points";
+    width: 10vw;
+}
+.logo{
+    grid-column: 1/2;
+    grid-row: -1;
+    color: rgb(187, 106, 0) ;
+}
+.logo button{
+    border-radius: 10px;
+    background-color: brown;
+}
+.aimer{
+grid-column: 2/3;
+grid-row: -1;
+border: 2px solid;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: -1;
+grid-template-areas: "like nbrevue dislike";
+border-radius: 9px;
+height: 3vh;
+width: 7vw;
+font-size: small;
+ background-color: rgb(88, 81, 81);
+
+
+}
+.partager,.telecharger,.points{
+  height: 3vh;
+  width: 5vw;
+  border-radius: 9px;
+  border: 2px  solid;
+  background-color: rgb(88, 81, 81);
+  cursor: pointer;
+
+}
+.like{
+    grid-column: 1/2;
+    grid-row: -1;
+    height: 3vh;
+    border-radius: 10px;
+    border:none;
+    background-color: rgb(88, 81, 81);
+   cursor: pointer;
+}
+.nbrevue{
+    grid-column: 2/3;
+    grid-row: -1;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    width: 1vw;
+}
+.dislike{
+    grid-column: 3/4;
+    grid-row: -1;
+    height: 2.5vh;
+   border-bottom: none;
+   border-top: none;
+   border-right: none;
+      border-left: 2px solid;
+     background-color: rgb(88, 81, 81);
+     cursor: pointer;
+}
+.partager{
+    grid-column: 3/4;
+    grid-row: -1;
+    width: 7vw;
+     font-weight: bold;
+}
+.telecharger{
+    grid-column: 4/5;
+    grid-row: -1;
+     width: 7vw;
+     font-weight: bold;
+}
+.points{
+    grid-column: 5/6;
+    grid-row: -1;
+     width: 3vw;
+}
+.desc{
+    grid-column: -1;
+    grid-row: 3/4;
+    color: rgb(187, 106, 0) ;
+}
+
+.commentaire{
+    grid-column: -1;
+    grid-row: 3/4;
+    padding: 10px;
+    position: relative;
+    bottom: 35px;
+    color:  rgb(187, 106, 0);
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 10px 1fr ;
+    grid-template-areas: "commenter"
+                          "listecommentaire";
+    flex-direction: column; 
+    display: grid;
+    row-gap: 10px;
+    
+}
+.profil{
+    height: 10vh;
+}
+.commenter{
+    grid-column: 1/1;
+    grid-row: 1/2;
+    gap: 12px;
+    flex-direction: column;
+}
+#listecommentaire{
+    grid-column: 1/1;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+
+}
+#addcomment{
+     width: 5vw;
+     height: 2vh;
+     background-color: black;
+      color: rgb(187, 106, 0) ;
+
+}
+.commentaire input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom:2px rgb(187, 106, 0) solid ;
+    width: 30vw;
+   color: rgb(187, 106, 0) ;
+   background-color: black;
+}
+.commentaire,.desc,.titre,.min_icone{
+    width: 70vw;
+}
+
+
+
+.nav{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: -1;
+    height: 120vh;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns:1fr ;
+    grid-template-areas: "file"
+                        "prem"
+                         "deu"
+                         "trois"
+                         "quat"
+                         "cinq"
+                         "si"
+                         "sept"
+                         "huit"
+                         "neuf"
+                         "di";
+                         background-color: black;
+                       
+}
+.file{
+    grid-column: -1;
+    grid-row: 1/2;
+    color: wheat;
+    font-size: xx-large;
+    font-weight: bold;
+    position: relative;
+    right: 7px;
+
+}
+.prem{
+    grid-column: -1;
+    grid-row: 2/3;
+    border: 1px red solid;
+}
+.deu{
+    grid-column: -1;
+    grid-row: 3/4;
+    border: 1px red solid;
+}
+.trois{
+    grid-row: 4/5;
+    grid-column: -1;
+        border: 1px red solid;
+}
+.quat{
+    grid-column: -1;
+    grid-row: 5/6;
+        border: 1px red solid;
+}
+.cinq{
+    grid-column: -1;
+    grid-row: 6/7;
+        
+}
+.si{
+    grid-column: -1;
+    grid-row: 7/8;
+        
+}
+.sept{
+    grid-column: -1;
+    grid-row: 8/9;
+        
+}
+.huit{
+    grid-column: -1;
+    grid-row: 9/10;
+        
+}
+.neuf{
+    grid-column: -1;
+    grid-row: 10/11;
+        
+}
+.di{
+    grid-column: -1;
+    grid-row: 11/12;
+        
+}
+.cinq,.deu,.prem,.quat,.trois,.di,.huit,.neuf,.sept,.si{
+    width: 20vw;
+    border: 3px rgb(255, 255, 255) solid;
+    position: relative;
+    right:50px ;
+    height: 10vh;
+    border-radius: 5px;
+    background-color: rgb(187, 106, 0) ;
+}
